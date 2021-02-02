@@ -13,15 +13,15 @@ namespace Personenverwaltung
         public List<Person> Persons()
         {
             List<Person> existingPerson = new List<Person>();
+            
 
             existingPerson.Add(new Person
             {
                 PersonFirstName = "Humbold",
                 PersonFamilyName = "Holzmann",
-                PersonAddress = "Grieskrichen",
+                PersonAddress = "Oberhausen",
                 PersonSex = "Männlich",
-                
-               
+              
             }
             ) ;
 
@@ -29,11 +29,19 @@ namespace Personenverwaltung
             {
                 PersonFirstName = "Hildegart",
                 PersonFamilyName = "Schwimmfrau",
-                PersonAddress = "Grieskrichen",
+                PersonAddress = "Unterhütting",
                 PersonSex = "Weiblich",
              
             }
             ) ;
+
+            existingPerson.Add(new Person
+            {
+                PersonFirstName = "Sirba",
+                PersonFamilyName = "Nachnambertus",
+                PersonAddress = "Nebenan",
+                PersonSex = "Deivers"
+            });
 
             return existingPerson;
         }

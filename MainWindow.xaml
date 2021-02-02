@@ -12,12 +12,14 @@
             <DataGrid.Columns>
                 <DataGridTextColumn  Header="Vorname" Width="*" Binding="{Binding PersonFirstName}"/>
                 <DataGridTextColumn  Header="Nachname" Width="*" Binding="{Binding PersonFamilyName}"/>
-                <DataGridTextColumn  Header="Adresse" Width="*" Binding="{Binding PersonGeschlecht}"/>
+                <DataGridTextColumn  Header="Adresse" Width="*" Binding="{Binding PersonAddress}"/>
                 <DataGridTemplateColumn Width="*" Header="Geschlecht">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <ComboBox>
-                                <ComboBoxItem Content="{Binding PersonGeschlecht}"/>
+                                <!--TODO: Hier sollen die 3 Geschlechter (Männlich, Weiblich, Divers) aufgelistet werden und jeweils das gespeicherte soll selektiert sein-->
+                                <!--Soll über MVVM laufen, also die Items nicht direkt in die Combobox einfügen-->
+                                <ComboBoxItem Content="{Binding PersonSex}"/>
                             </ComboBox>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
